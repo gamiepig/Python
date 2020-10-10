@@ -11,12 +11,12 @@ playing = True
 ball = p.image.load("bar.png")
 b_rect = ball.get_rect(left = 470, top = 270)
 b_x = 0
-b_y = 0 #중력 비슷한 역할
+b_y = 3 #중력 비슷한 역할
 #fps
 clock = p.time.Clock()
-
+#수정
 while playing:
-    clock.tick(50)
+    clock.tick(60)
 
     
     for event in p.event.get():
